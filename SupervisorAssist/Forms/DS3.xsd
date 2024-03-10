@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DS3" targetNamespace="http://tempuri.org/DS3.xsd" xmlns:mstns="http://tempuri.org/DS3.xsd" xmlns="http://tempuri.org/DS3.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DS3" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DS3" msprop:Generator_UserDSName="DS3">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTable3" msprop:Generator_TableClassName="DataTable3DataTable" msprop:Generator_TableVarName="tableDataTable3" msprop:Generator_TablePropName="DataTable3" msprop:Generator_RowDeletingName="DataTable3RowDeleting" msprop:Generator_RowChangingName="DataTable3RowChanging" msprop:Generator_RowEvHandlerName="DataTable3RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable3RowDeleted" msprop:Generator_UserTableName="DataTable3" msprop:Generator_RowChangedName="DataTable3RowChanged" msprop:Generator_RowEvArgName="DataTable3RowChangeEvent" msprop:Generator_RowClassName="DataTable3Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ProblemNum" msprop:Generator_ColumnVarNameInTable="columnProblemNum" msprop:Generator_ColumnPropNameInRow="ProblemNum" msprop:Generator_ColumnPropNameInTable="ProblemNumColumn" msprop:Generator_UserColumnName="ProblemNum" type="xs:string" minOccurs="0" />
+              <xs:element name="ToolManagement" msprop:Generator_ColumnVarNameInTable="columnToolManagement" msprop:Generator_ColumnPropNameInRow="ToolManagement" msprop:Generator_ColumnPropNameInTable="ToolManagementColumn" msprop:Generator_UserColumnName="ToolManagement" type="xs:string" minOccurs="0" />
+              <xs:element name="LithologyImplementation" msprop:Generator_ColumnVarNameInTable="columnLithologyImplementation" msprop:Generator_ColumnPropNameInRow="LithologyImplementation" msprop:Generator_ColumnPropNameInTable="LithologyImplementationColumn" msprop:Generator_UserColumnName="LithologyImplementation" type="xs:string" minOccurs="0" />
+              <xs:element name="GeologicalCardLayer" msprop:Generator_ColumnVarNameInTable="columnGeologicalCardLayer" msprop:Generator_ColumnPropNameInRow="GeologicalCardLayer" msprop:Generator_ColumnPropNameInTable="GeologicalCardLayerColumn" msprop:Generator_UserColumnName="GeologicalCardLayer" type="xs:string" minOccurs="0" />
+              <xs:element name="OilAndGasDisplayImplementation" msprop:Generator_ColumnVarNameInTable="columnOilAndGasDisplayImplementation" msprop:Generator_ColumnPropNameInRow="OilAndGasDisplayImplementation" msprop:Generator_ColumnPropNameInTable="OilAndGasDisplayImplementationColumn" msprop:Generator_UserColumnName="OilAndGasDisplayImplementation" type="xs:string" minOccurs="0" />
+              <xs:element name="InstrumentOperationAndCalibration" msprop:Generator_ColumnVarNameInTable="columnInstrumentOperationAndCalibration" msprop:Generator_ColumnPropNameInRow="InstrumentOperationAndCalibration" msprop:Generator_ColumnPropNameInTable="InstrumentOperationAndCalibrationColumn" msprop:Generator_UserColumnName="InstrumentOperationAndCalibration" type="xs:string" minOccurs="0" />
+              <xs:element name="EngineeringWarning" msprop:Generator_ColumnVarNameInTable="columnEngineeringWarning" msprop:Generator_ColumnPropNameInRow="EngineeringWarning" msprop:Generator_ColumnPropNameInTable="EngineeringWarningColumn" msprop:Generator_UserColumnName="EngineeringWarning" type="xs:string" minOccurs="0" />
+              <xs:element name="DataQuality" msprop:Generator_ColumnVarNameInTable="columnDataQuality" msprop:Generator_ColumnPropNameInRow="DataQuality" msprop:Generator_ColumnPropNameInTable="DataQualityColumn" msprop:Generator_UserColumnName="DataQuality" type="xs:string" minOccurs="0" />
+              <xs:element name="LoggingByPost" msprop:Generator_ColumnVarNameInTable="columnLoggingByPost" msprop:Generator_ColumnPropNameInRow="LoggingByPost" msprop:Generator_ColumnPropNameInTable="LoggingByPostColumn" msprop:Generator_UserColumnName="LoggingByPost" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

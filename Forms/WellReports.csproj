@@ -1,0 +1,345 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{37D11C63-D647-4171-8609-35B4548D8D3C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Forms</RootNamespace>
+    <AssemblyName>WellReports</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\packages\Microsoft.Office.Interop.Excel.15.0.4795.1001\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Word, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\packages\Microsoft.Office.Interop.Word.15.0.4797.1004\lib\net20\Microsoft.Office.Interop.Word.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.Common.10.0.40219.1\lib\Microsoft.ReportViewer.Common.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.Common.10.0.40219.1\lib\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.Common.10.0.40219.1\lib\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.WinForms.10.0.40219.1\lib\Microsoft.ReportViewer.WinForms.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataSet1.cs">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS1.cs">
+      <DependentUpon>DS1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS2.cs">
+      <DependentUpon>DS2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS3.cs">
+      <DependentUpon>DS3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS4.cs">
+      <DependentUpon>DS4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS5.cs">
+      <DependentUpon>DS5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS6.cs">
+      <DependentUpon>DS6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WellForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WellForm1.Designer.cs">
+      <DependentUpon>WellForm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WellForm2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WellForm2.Designer.cs">
+      <DependentUpon>WellForm2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WellForm3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WellForm3.Designer.cs">
+      <DependentUpon>WellForm3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WellForm4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WellForm4.Designer.cs">
+      <DependentUpon>WellForm4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WellForm5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WellForm5.Designer.cs">
+      <DependentUpon>WellForm5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WellForm6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WellForm6.Designer.cs">
+      <DependentUpon>WellForm6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WellForm7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WellForm7.Designer.cs">
+      <DependentUpon>WellForm7.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="WellForm1.resx">
+      <DependentUpon>WellForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WellForm2.resx">
+      <DependentUpon>WellForm2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WellForm3.resx">
+      <DependentUpon>WellForm3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WellForm4.resx">
+      <DependentUpon>WellForm4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WellForm5.resx">
+      <DependentUpon>WellForm5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WellForm6.resx">
+      <DependentUpon>WellForm6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WellForm7.resx">
+      <DependentUpon>WellForm7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xx 井基本信息数据表.rdlc" />
+    <EmbeddedResource Include="地质监督发现问题统计表—开工验收.rdlc" />
+    <EmbeddedResource Include="地质监督发现问题统计表—录井QHSE.rdlc" />
+    <EmbeddedResource Include="地质监督发现问题统计表—过程监督.rdlc" />
+    <EmbeddedResource Include="监督报告附表（三）现场问题及整改情况统计表.rdlc" />
+    <EmbeddedResource Include="监督报告附表（二）录井工作量统计表（时间）.rdlc" />
+    <EmbeddedResource Include="监督报告附表（二）录井工作量统计表（进尺）.rdlc" />
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DS1.xsc">
+      <DependentUpon>DS1.xsd</DependentUpon>
+    </None>
+    <None Include="DS1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS1.xss">
+      <DependentUpon>DS1.xsd</DependentUpon>
+    </None>
+    <None Include="DS2.xsc">
+      <DependentUpon>DS2.xsd</DependentUpon>
+    </None>
+    <None Include="DS2.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS2.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS2.xss">
+      <DependentUpon>DS2.xsd</DependentUpon>
+    </None>
+    <None Include="DS3.xsc">
+      <DependentUpon>DS3.xsd</DependentUpon>
+    </None>
+    <None Include="DS3.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS3.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS3.xss">
+      <DependentUpon>DS3.xsd</DependentUpon>
+    </None>
+    <None Include="DS4.xsc">
+      <DependentUpon>DS4.xsd</DependentUpon>
+    </None>
+    <None Include="DS4.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS4.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS4.xss">
+      <DependentUpon>DS4.xsd</DependentUpon>
+    </None>
+    <None Include="DS5.xsc">
+      <DependentUpon>DS5.xsd</DependentUpon>
+    </None>
+    <None Include="DS5.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS5.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS5.xss">
+      <DependentUpon>DS5.xsd</DependentUpon>
+    </None>
+    <None Include="DS6.xsc">
+      <DependentUpon>DS6.xsd</DependentUpon>
+    </None>
+    <None Include="DS6.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS6.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS6.xss">
+      <DependentUpon>DS6.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{38d7aa58-c95b-449b-86c6-a8073a56e11f}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{e3d8759a-c5eb-402d-9f10-f5c6029a8d1a}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DALFactory\DALFactory.csproj">
+      <Project>{96401c5e-d166-4e4e-98c2-3eca91b6c7eb}</Project>
+      <Name>DALFactory</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DBUtility\DBUtility.csproj">
+      <Project>{0988c62e-247f-471f-a183-db509c7a3839}</Project>
+      <Name>DBUtility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IDAL\IDAL.csproj">
+      <Project>{b0706fa2-977c-4523-b093-f57804756498}</Project>
+      <Name>IDAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{53995dbb-9836-4647-ad22-865884fdeb9e}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SQLServerDAL\SQLServerDAL.csproj">
+      <Project>{ab835ba2-ffd6-49cd-87b0-e216255bb32e}</Project>
+      <Name>SQLServerDAL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

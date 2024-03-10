@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DS6" targetNamespace="http://tempuri.org/DS6.xsd" xmlns:mstns="http://tempuri.org/DS6.xsd" xmlns="http://tempuri.org/DS6.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DS6" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DS6" msprop:Generator_UserDSName="DS6">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTable6_1" msprop:Generator_TableClassName="DataTable6_1DataTable" msprop:Generator_TableVarName="tableDataTable6_1" msprop:Generator_TablePropName="DataTable6_1" msprop:Generator_RowDeletingName="DataTable6_1RowDeleting" msprop:Generator_RowChangingName="DataTable6_1RowChanging" msprop:Generator_RowEvHandlerName="DataTable6_1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable6_1RowDeleted" msprop:Generator_UserTableName="DataTable6_1" msprop:Generator_RowChangedName="DataTable6_1RowChanged" msprop:Generator_RowEvArgName="DataTable6_1RowChangeEvent" msprop:Generator_RowClassName="DataTable6_1Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="WellNum" msprop:Generator_ColumnVarNameInTable="columnWellNum" msprop:Generator_ColumnPropNameInRow="WellNum" msprop:Generator_ColumnPropNameInTable="WellNumColumn" msprop:Generator_UserColumnName="WellNum" type="xs:string" minOccurs="0" />
+              <xs:element name="WellSort" msprop:Generator_ColumnVarNameInTable="columnWellSort" msprop:Generator_ColumnPropNameInRow="WellSort" msprop:Generator_ColumnPropNameInTable="WellSortColumn" msprop:Generator_UserColumnName="WellSort" type="xs:string" minOccurs="0" />
+              <xs:element name="WellType" msprop:Generator_ColumnVarNameInTable="columnWellType" msprop:Generator_ColumnPropNameInRow="WellType" msprop:Generator_ColumnPropNameInTable="WellTypeColumn" msprop:Generator_UserColumnName="WellType" type="xs:string" minOccurs="0" />
+              <xs:element name="Deep1" msprop:Generator_ColumnVarNameInTable="columnDeep1" msprop:Generator_ColumnPropNameInRow="Deep1" msprop:Generator_ColumnPropNameInTable="Deep1Column" msprop:Generator_UserColumnName="Deep1" type="xs:string" minOccurs="0" />
+              <xs:element name="Deep2" msprop:Generator_ColumnVarNameInTable="columnDeep2" msprop:Generator_ColumnPropNameInRow="Deep2" msprop:Generator_ColumnPropNameInTable="Deep2Column" msprop:Generator_UserColumnName="Deep2" type="xs:string" minOccurs="0" />
+              <xs:element name="Location" msprop:Generator_ColumnVarNameInTable="columnLocation" msprop:Generator_ColumnPropNameInRow="Location" msprop:Generator_ColumnPropNameInTable="LocationColumn" msprop:Generator_UserColumnName="Location" type="xs:string" minOccurs="0" />
+              <xs:element name="LoggingTeam" msprop:Generator_ColumnVarNameInTable="columnLoggingTeam" msprop:Generator_ColumnPropNameInRow="LoggingTeam" msprop:Generator_ColumnPropNameInTable="LoggingTeamColumn" msprop:Generator_UserColumnName="LoggingTeam" type="xs:string" minOccurs="0" />
+              <xs:element name="TeamType" msprop:Generator_ColumnVarNameInTable="columnTeamType" msprop:Generator_ColumnPropNameInRow="TeamType" msprop:Generator_ColumnPropNameInTable="TeamTypeColumn" msprop:Generator_UserColumnName="TeamType" type="xs:string" minOccurs="0" />
+              <xs:element name="TeamLevel" msprop:Generator_ColumnVarNameInTable="columnTeamLevel" msprop:Generator_ColumnPropNameInRow="TeamLevel" msprop:Generator_ColumnPropNameInTable="TeamLevelColumn" msprop:Generator_UserColumnName="TeamLevel" type="xs:string" minOccurs="0" />
+              <xs:element name="SupervisionUnit" msprop:Generator_ColumnVarNameInTable="columnSupervisionUnit" msprop:Generator_ColumnPropNameInRow="SupervisionUnit" msprop:Generator_ColumnPropNameInTable="SupervisionUnitColumn" msprop:Generator_UserColumnName="SupervisionUnit" type="xs:string" minOccurs="0" />
+              <xs:element name="GeologicalSupervision" msprop:Generator_ColumnVarNameInTable="columnGeologicalSupervision" msprop:Generator_ColumnPropNameInRow="GeologicalSupervision" msprop:Generator_ColumnPropNameInTable="GeologicalSupervisionColumn" msprop:Generator_UserColumnName="GeologicalSupervision" type="xs:string" minOccurs="0" />
+              <xs:element name="StartTime1" msprop:Generator_ColumnVarNameInTable="columnStartTime1" msprop:Generator_ColumnPropNameInRow="StartTime1" msprop:Generator_ColumnPropNameInTable="StartTime1Column" msprop:Generator_UserColumnName="StartTime1" type="xs:string" minOccurs="0" />
+              <xs:element name="StartTime2" msprop:Generator_ColumnVarNameInTable="columnStartTime2" msprop:Generator_ColumnPropNameInRow="StartTime2" msprop:Generator_ColumnPropNameInTable="StartTime2Column" msprop:Generator_UserColumnName="StartTime2" type="xs:string" minOccurs="0" />
+              <xs:element name="StartTime3" msprop:Generator_ColumnVarNameInTable="columnStartTime3" msprop:Generator_ColumnPropNameInRow="StartTime3" msprop:Generator_ColumnPropNameInTable="StartTime3Column" msprop:Generator_UserColumnName="StartTime3" type="xs:string" minOccurs="0" />
+              <xs:element name="EndTime1" msprop:Generator_ColumnVarNameInTable="columnEndTime1" msprop:Generator_ColumnPropNameInRow="EndTime1" msprop:Generator_ColumnPropNameInTable="EndTime1Column" msprop:Generator_UserColumnName="EndTime1" type="xs:string" minOccurs="0" />
+              <xs:element name="EndTime2" msprop:Generator_ColumnVarNameInTable="columnEndTime2" msprop:Generator_ColumnPropNameInRow="EndTime2" msprop:Generator_ColumnPropNameInTable="EndTime2Column" msprop:Generator_UserColumnName="EndTime2" type="xs:string" minOccurs="0" />
+              <xs:element name="EndTime3" msprop:Generator_ColumnVarNameInTable="columnEndTime3" msprop:Generator_ColumnPropNameInRow="EndTime3" msprop:Generator_ColumnPropNameInTable="EndTime3Column" msprop:Generator_UserColumnName="EndTime3" type="xs:string" minOccurs="0" />
+              <xs:element name="Days1" msprop:Generator_ColumnVarNameInTable="columnDays1" msprop:Generator_ColumnPropNameInRow="Days1" msprop:Generator_ColumnPropNameInTable="Days1Column" msprop:Generator_UserColumnName="Days1" type="xs:string" minOccurs="0" />
+              <xs:element name="Days2" msprop:Generator_ColumnVarNameInTable="columnDays2" msprop:Generator_ColumnPropNameInRow="Days2" msprop:Generator_ColumnPropNameInTable="Days2Column" msprop:Generator_UserColumnName="Days2" type="xs:string" minOccurs="0" />
+              <xs:element name="Days3" msprop:Generator_ColumnVarNameInTable="columnDays3" msprop:Generator_ColumnPropNameInRow="Days3" msprop:Generator_ColumnPropNameInTable="Days3Column" msprop:Generator_UserColumnName="Days3" type="xs:string" minOccurs="0" />
+              <xs:element name="Logs1" msprop:Generator_ColumnVarNameInTable="columnLogs1" msprop:Generator_ColumnPropNameInRow="Logs1" msprop:Generator_ColumnPropNameInTable="Logs1Column" msprop:Generator_UserColumnName="Logs1" type="xs:string" minOccurs="0" />
+              <xs:element name="Logs2" msprop:Generator_ColumnVarNameInTable="columnLogs2" msprop:Generator_ColumnPropNameInRow="Logs2" msprop:Generator_ColumnPropNameInTable="Logs2Column" msprop:Generator_UserColumnName="Logs2" type="xs:string" minOccurs="0" />
+              <xs:element name="Logs3" msprop:Generator_ColumnVarNameInTable="columnLogs3" msprop:Generator_ColumnPropNameInRow="Logs3" msprop:Generator_ColumnPropNameInTable="Logs3Column" msprop:Generator_UserColumnName="Logs3" type="xs:string" minOccurs="0" />
+              <xs:element name="ComplexType" msprop:Generator_ColumnVarNameInTable="columnComplexType" msprop:Generator_ColumnPropNameInRow="ComplexType" msprop:Generator_ColumnPropNameInTable="ComplexTypeColumn" msprop:Generator_UserColumnName="ComplexType" type="xs:string" minOccurs="0" />
+              <xs:element name="StartTime" msprop:Generator_ColumnVarNameInTable="columnStartTime" msprop:Generator_ColumnPropNameInRow="StartTime" msprop:Generator_ColumnPropNameInTable="StartTimeColumn" msprop:Generator_UserColumnName="StartTime" type="xs:string" minOccurs="0" />
+              <xs:element name="EndTime" msprop:Generator_ColumnVarNameInTable="columnEndTime" msprop:Generator_ColumnPropNameInRow="EndTime" msprop:Generator_ColumnPropNameInTable="EndTimeColumn" msprop:Generator_UserColumnName="EndTime" type="xs:string" minOccurs="0" />
+              <xs:element name="ComplexDays" msprop:Generator_ColumnVarNameInTable="columnComplexDays" msprop:Generator_ColumnPropNameInRow="ComplexDays" msprop:Generator_ColumnPropNameInTable="ComplexDaysColumn" msprop:Generator_UserColumnName="ComplexDays" type="xs:string" minOccurs="0" />
+              <xs:element name="ComplexLogs" msprop:Generator_ColumnVarNameInTable="columnComplexLogs" msprop:Generator_ColumnPropNameInRow="ComplexLogs" msprop:Generator_ColumnPropNameInTable="ComplexLogsColumn" msprop:Generator_UserColumnName="ComplexLogs" type="xs:string" minOccurs="0" />
+              <xs:element name="OrganizeDowntimeDays" msprop:Generator_ColumnVarNameInTable="columnOrganizeDowntimeDays" msprop:Generator_ColumnPropNameInRow="OrganizeDowntimeDays" msprop:Generator_ColumnPropNameInTable="OrganizeDowntimeDaysColumn" msprop:Generator_UserColumnName="OrganizeDowntimeDays" type="xs:string" minOccurs="0" />
+              <xs:element name="PresentationOfCondition" msprop:Generator_ColumnVarNameInTable="columnPresentationOfCondition" msprop:Generator_ColumnPropNameInRow="PresentationOfCondition" msprop:Generator_ColumnPropNameInTable="PresentationOfConditionColumn" msprop:Generator_UserColumnName="PresentationOfCondition" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DataTable6_2" msprop:Generator_TableClassName="DataTable6_2DataTable" msprop:Generator_TableVarName="tableDataTable6_2" msprop:Generator_TablePropName="DataTable6_2" msprop:Generator_RowDeletingName="DataTable6_2RowDeleting" msprop:Generator_RowChangingName="DataTable6_2RowChanging" msprop:Generator_RowEvHandlerName="DataTable6_2RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable6_2RowDeleted" msprop:Generator_UserTableName="DataTable6_2" msprop:Generator_RowChangedName="DataTable6_2RowChanged" msprop:Generator_RowEvArgName="DataTable6_2RowChangeEvent" msprop:Generator_RowClassName="DataTable6_2Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Starttime1" msprop:Generator_ColumnVarNameInTable="columnStarttime1" msprop:Generator_ColumnPropNameInRow="Starttime1" msprop:Generator_ColumnPropNameInTable="Starttime1Column" msprop:Generator_UserColumnName="Starttime1" type="xs:string" minOccurs="0" />
+              <xs:element name="Endtime1" msprop:Generator_ColumnVarNameInTable="columnEndtime1" msprop:Generator_ColumnPropNameInRow="Endtime1" msprop:Generator_ColumnPropNameInTable="Endtime1Column" msprop:Generator_UserColumnName="Endtime1" type="xs:string" minOccurs="0" />
+              <xs:element name="ServiceDays" msprop:Generator_ColumnVarNameInTable="columnServiceDays" msprop:Generator_ColumnPropNameInRow="ServiceDays" msprop:Generator_ColumnPropNameInTable="ServiceDaysColumn" msprop:Generator_UserColumnName="ServiceDays" type="xs:string" minOccurs="0" />
+              <xs:element name="Logs1" msprop:Generator_ColumnVarNameInTable="columnLogs1" msprop:Generator_ColumnPropNameInRow="Logs1" msprop:Generator_ColumnPropNameInTable="Logs1Column" msprop:Generator_UserColumnName="Logs1" type="xs:string" minOccurs="0" />
+              <xs:element name="ProjectName" msprop:Generator_ColumnVarNameInTable="columnProjectName" msprop:Generator_ColumnPropNameInRow="ProjectName" msprop:Generator_ColumnPropNameInTable="ProjectNameColumn" msprop:Generator_UserColumnName="ProjectName" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

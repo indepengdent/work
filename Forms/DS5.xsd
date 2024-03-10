@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DS5" targetNamespace="http://tempuri.org/DS5.xsd" xmlns:mstns="http://tempuri.org/DS5.xsd" xmlns="http://tempuri.org/DS5.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DS5" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DS5" msprop:Generator_UserDSName="DS5">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTable5_1" msprop:Generator_TableClassName="DataTable5_1DataTable" msprop:Generator_TableVarName="tableDataTable5_1" msprop:Generator_TablePropName="DataTable5_1" msprop:Generator_RowDeletingName="DataTable5_1RowDeleting" msprop:Generator_RowChangingName="DataTable5_1RowChanging" msprop:Generator_RowEvHandlerName="DataTable5_1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable5_1RowDeleted" msprop:Generator_UserTableName="DataTable5_1" msprop:Generator_RowChangedName="DataTable5_1RowChanged" msprop:Generator_RowEvArgName="DataTable5_1RowChangeEvent" msprop:Generator_RowClassName="DataTable5_1Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="WellNum" msprop:Generator_ColumnVarNameInTable="columnWellNum" msprop:Generator_ColumnPropNameInRow="WellNum" msprop:Generator_ColumnPropNameInTable="WellNumColumn" msprop:Generator_UserColumnName="WellNum" type="xs:string" minOccurs="0" />
+              <xs:element name="WellSort" msprop:Generator_ColumnVarNameInTable="columnWellSort" msprop:Generator_ColumnPropNameInRow="WellSort" msprop:Generator_ColumnPropNameInTable="WellSortColumn" msprop:Generator_UserColumnName="WellSort" type="xs:string" minOccurs="0" />
+              <xs:element name="WellType" msprop:Generator_ColumnVarNameInTable="columnWellType" msprop:Generator_ColumnPropNameInRow="WellType" msprop:Generator_ColumnPropNameInTable="WellTypeColumn" msprop:Generator_UserColumnName="WellType" type="xs:string" minOccurs="0" />
+              <xs:element name="Deep1" msprop:Generator_ColumnVarNameInTable="columnDeep1" msprop:Generator_ColumnPropNameInRow="Deep1" msprop:Generator_ColumnPropNameInTable="Deep1Column" msprop:Generator_UserColumnName="Deep1" type="xs:string" minOccurs="0" />
+              <xs:element name="Deep2" msprop:Generator_ColumnVarNameInTable="columnDeep2" msprop:Generator_ColumnPropNameInRow="Deep2" msprop:Generator_ColumnPropNameInTable="Deep2Column" msprop:Generator_UserColumnName="Deep2" type="xs:string" minOccurs="0" />
+              <xs:element name="Location" msprop:Generator_ColumnVarNameInTable="columnLocation" msprop:Generator_ColumnPropNameInRow="Location" msprop:Generator_ColumnPropNameInTable="LocationColumn" msprop:Generator_UserColumnName="Location" type="xs:string" minOccurs="0" />
+              <xs:element name="LoggingTeam" msprop:Generator_ColumnVarNameInTable="columnLoggingTeam" msprop:Generator_ColumnPropNameInRow="LoggingTeam" msprop:Generator_ColumnPropNameInTable="LoggingTeamColumn" msprop:Generator_UserColumnName="LoggingTeam" type="xs:string" minOccurs="0" />
+              <xs:element name="TeamType" msprop:Generator_ColumnVarNameInTable="columnTeamType" msprop:Generator_ColumnPropNameInRow="TeamType" msprop:Generator_ColumnPropNameInTable="TeamTypeColumn" msprop:Generator_UserColumnName="TeamType" type="xs:string" minOccurs="0" />
+              <xs:element name="TeamLevel" msprop:Generator_ColumnVarNameInTable="columnTeamLevel" msprop:Generator_ColumnPropNameInRow="TeamLevel" msprop:Generator_ColumnPropNameInTable="TeamLevelColumn" msprop:Generator_UserColumnName="TeamLevel" type="xs:string" minOccurs="0" />
+              <xs:element name="SupervisionUnit" msprop:Generator_ColumnVarNameInTable="columnSupervisionUnit" msprop:Generator_ColumnPropNameInRow="SupervisionUnit" msprop:Generator_ColumnPropNameInTable="SupervisionUnitColumn" msprop:Generator_UserColumnName="SupervisionUnit" type="xs:string" minOccurs="0" />
+              <xs:element name="GeologicalSupervision" msprop:Generator_ColumnVarNameInTable="columnGeologicalSupervision" msprop:Generator_ColumnPropNameInRow="GeologicalSupervision" msprop:Generator_ColumnPropNameInTable="GeologicalSupervisionColumn" msprop:Generator_UserColumnName="GeologicalSupervision" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DataTable5_2" msprop:Generator_TableClassName="DataTable5_2DataTable" msprop:Generator_TableVarName="tableDataTable5_2" msprop:Generator_TablePropName="DataTable5_2" msprop:Generator_RowDeletingName="DataTable5_2RowDeleting" msprop:Generator_RowChangingName="DataTable5_2RowChanging" msprop:Generator_RowEvHandlerName="DataTable5_2RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable5_2RowDeleted" msprop:Generator_UserTableName="DataTable5_2" msprop:Generator_RowChangedName="DataTable5_2RowChanged" msprop:Generator_RowEvArgName="DataTable5_2RowChangeEvent" msprop:Generator_RowClassName="DataTable5_2Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="LoggingProjects" msprop:Generator_ColumnVarNameInTable="columnLoggingProjects" msprop:Generator_ColumnPropNameInRow="LoggingProjects" msprop:Generator_ColumnPropNameInTable="LoggingProjectsColumn" msprop:Generator_UserColumnName="LoggingProjects" type="xs:string" minOccurs="0" />
+              <xs:element name="StartDeep" msprop:Generator_ColumnVarNameInTable="columnStartDeep" msprop:Generator_ColumnPropNameInRow="StartDeep" msprop:Generator_ColumnPropNameInTable="StartDeepColumn" msprop:Generator_UserColumnName="StartDeep" type="xs:string" minOccurs="0" />
+              <xs:element name="EndDeep" msprop:Generator_ColumnVarNameInTable="columnEndDeep" msprop:Generator_ColumnPropNameInRow="EndDeep" msprop:Generator_ColumnPropNameInTable="EndDeepColumn" msprop:Generator_UserColumnName="EndDeep" type="xs:string" minOccurs="0" />
+              <xs:element name="Interval" msprop:Generator_ColumnVarNameInTable="columnInterval" msprop:Generator_ColumnPropNameInRow="Interval" msprop:Generator_ColumnPropNameInTable="IntervalColumn" msprop:Generator_UserColumnName="Interval" type="xs:string" minOccurs="0" />
+              <xs:element name="Number" msprop:Generator_ColumnVarNameInTable="columnNumber" msprop:Generator_ColumnPropNameInRow="Number" msprop:Generator_ColumnPropNameInTable="NumberColumn" msprop:Generator_UserColumnName="Number" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

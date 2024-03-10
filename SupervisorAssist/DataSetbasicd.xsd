@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSetbasicd" targetNamespace="http://tempuri.org/DataSetbasicd.xsd" xmlns:mstns="http://tempuri.org/DataSetbasicd.xsd" xmlns="http://tempuri.org/DataSetbasicd.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSetbasicd" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSetbasicd" msprop:Generator_UserDSName="DataSetbasicd">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTable1" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent" msprop:Generator_RowClassName="DataTable1Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Wellnum" msprop:Generator_ColumnVarNameInTable="columnWellnum" msprop:Generator_ColumnPropNameInRow="Wellnum" msprop:Generator_ColumnPropNameInTable="WellnumColumn" msprop:Generator_UserColumnName="Wellnum" type="xs:string" minOccurs="0" />
+              <xs:element name="Well_type" msprop:Generator_ColumnVarNameInTable="columnWell_type" msprop:Generator_ColumnPropNameInRow="Well_type" msprop:Generator_ColumnPropNameInTable="Well_typeColumn" msprop:Generator_UserColumnName="Well_type" type="xs:string" minOccurs="0" />
+              <xs:element name="Well_BB" msprop:Generator_ColumnVarNameInTable="columnWell_BB" msprop:Generator_ColumnPropNameInRow="Well_BB" msprop:Generator_ColumnPropNameInTable="Well_BBColumn" msprop:Generator_UserColumnName="Well_BB" type="xs:string" minOccurs="0" />
+              <xs:element name="Location" msprop:Generator_ColumnVarNameInTable="columnLocation" msprop:Generator_ColumnPropNameInRow="Location" msprop:Generator_ColumnPropNameInTable="LocationColumn" msprop:Generator_UserColumnName="Location" type="xs:string" minOccurs="0" />
+              <xs:element name="GZLoc" msprop:Generator_ColumnVarNameInTable="columnGZLoc" msprop:Generator_ColumnPropNameInRow="GZLoc" msprop:Generator_ColumnPropNameInTable="GZLocColumn" msprop:Generator_UserColumnName="GZLoc" type="xs:string" minOccurs="0" />
+              <xs:element name="DrillAim" msprop:Generator_ColumnVarNameInTable="columnDrillAim" msprop:Generator_ColumnPropNameInRow="DrillAim" msprop:Generator_ColumnPropNameInTable="DrillAimColumn" msprop:Generator_UserColumnName="DrillAim" type="xs:string" minOccurs="0" />
+              <xs:element name="ComRul" msprop:Generator_ColumnVarNameInTable="columnComRul" msprop:Generator_ColumnPropNameInRow="ComRul" msprop:Generator_ColumnPropNameInTable="ComRulColumn" msprop:Generator_UserColumnName="ComRul" type="xs:string" minOccurs="0" />
+              <xs:element name="Well_KB" msprop:Generator_ColumnVarNameInTable="columnWell_KB" msprop:Generator_ColumnPropNameInRow="Well_KB" msprop:Generator_ColumnPropNameInTable="Well_KBColumn" msprop:Generator_UserColumnName="Well_KB" type="xs:string" minOccurs="0" />
+              <xs:element name="Well_HB" msprop:Generator_ColumnVarNameInTable="columnWell_HB" msprop:Generator_ColumnPropNameInRow="Well_HB" msprop:Generator_ColumnPropNameInTable="Well_HBColumn" msprop:Generator_UserColumnName="Well_HB" type="xs:string" minOccurs="0" />
+              <xs:element name="Well_Cd" msprop:Generator_ColumnVarNameInTable="columnWell_Cd" msprop:Generator_ColumnPropNameInRow="Well_Cd" msprop:Generator_ColumnPropNameInTable="Well_CdColumn" msprop:Generator_UserColumnName="Well_Cd" type="xs:string" minOccurs="0" />
+              <xs:element name="Well_depth" msprop:Generator_ColumnVarNameInTable="columnWell_depth" msprop:Generator_ColumnPropNameInRow="Well_depth" msprop:Generator_ColumnPropNameInTable="Well_depthColumn" msprop:Generator_UserColumnName="Well_depth" type="xs:string" minOccurs="0" />
+              <xs:element name="Well_Sd" msprop:Generator_ColumnVarNameInTable="columnWell_Sd" msprop:Generator_ColumnPropNameInRow="Well_Sd" msprop:Generator_ColumnPropNameInTable="Well_SdColumn" msprop:Generator_UserColumnName="Well_Sd" type="xs:string" minOccurs="0" />
+              <xs:element name="Wzdepth" msprop:Generator_ColumnVarNameInTable="columnWzdepth" msprop:Generator_ColumnPropNameInRow="Wzdepth" msprop:Generator_ColumnPropNameInTable="WzdepthColumn" msprop:Generator_UserColumnName="Wzdepth" type="xs:string" minOccurs="0" />
+              <xs:element name="WzCd" msprop:Generator_ColumnVarNameInTable="columnWzCd" msprop:Generator_ColumnPropNameInRow="WzCd" msprop:Generator_ColumnPropNameInTable="WzCdColumn" msprop:Generator_UserColumnName="WzCd" type="xs:string" minOccurs="0" />
+              <xs:element name="WzLayer" msprop:Generator_ColumnVarNameInTable="columnWzLayer" msprop:Generator_ColumnPropNameInRow="WzLayer" msprop:Generator_ColumnPropNameInTable="WzLayerColumn" msprop:Generator_UserColumnName="WzLayer" type="xs:string" minOccurs="0" />
+              <xs:element name="HorLen" msprop:Generator_ColumnVarNameInTable="columnHorLen" msprop:Generator_ColumnPropNameInRow="HorLen" msprop:Generator_ColumnPropNameInTable="HorLenColumn" msprop:Generator_UserColumnName="HorLen" type="xs:string" minOccurs="0" />
+              <xs:element name="SpLen" msprop:Generator_ColumnVarNameInTable="columnSpLen" msprop:Generator_ColumnPropNameInRow="SpLen" msprop:Generator_ColumnPropNameInTable="SpLenColumn" msprop:Generator_UserColumnName="SpLen" type="xs:string" minOccurs="0" />
+              <xs:element name="LjDepth" msprop:Generator_ColumnVarNameInTable="columnLjDepth" msprop:Generator_ColumnPropNameInRow="LjDepth" msprop:Generator_ColumnPropNameInTable="LjDepthColumn" msprop:Generator_UserColumnName="LjDepth" type="xs:string" minOccurs="0" />
+              <xs:element name="MainAimLayer" msprop:Generator_ColumnVarNameInTable="columnMainAimLayer" msprop:Generator_ColumnPropNameInRow="MainAimLayer" msprop:Generator_ColumnPropNameInTable="MainAimLayerColumn" msprop:Generator_UserColumnName="MainAimLayer" type="xs:string" minOccurs="0" />
+              <xs:element name="SecAimLayer" msprop:Generator_ColumnVarNameInTable="columnSecAimLayer" msprop:Generator_ColumnPropNameInRow="SecAimLayer" msprop:Generator_ColumnPropNameInTable="SecAimLayerColumn" msprop:Generator_UserColumnName="SecAimLayer" type="xs:string" minOccurs="0" />
+              <xs:element name="SDate" msprop:Generator_ColumnVarNameInTable="columnSDate" msprop:Generator_ColumnPropNameInRow="SDate" msprop:Generator_ColumnPropNameInTable="SDateColumn" msprop:Generator_UserColumnName="SDate" type="xs:string" minOccurs="0" />
+              <xs:element name="EDate" msprop:Generator_ColumnVarNameInTable="columnEDate" msprop:Generator_ColumnPropNameInRow="EDate" msprop:Generator_ColumnPropNameInTable="EDateColumn" msprop:Generator_UserColumnName="EDate" type="xs:string" minOccurs="0" />
+              <xs:element name="CDate" msprop:Generator_ColumnVarNameInTable="columnCDate" msprop:Generator_ColumnPropNameInRow="CDate" msprop:Generator_ColumnPropNameInTable="CDateColumn" msprop:Generator_UserColumnName="CDate" type="xs:string" minOccurs="0" />
+              <xs:element name="LJStartDate" msprop:Generator_ColumnVarNameInTable="columnLJStartDate" msprop:Generator_ColumnPropNameInRow="LJStartDate" msprop:Generator_ColumnPropNameInTable="LJStartDateColumn" msprop:Generator_UserColumnName="LJStartDate" type="xs:string" minOccurs="0" />
+              <xs:element name="ComSty" msprop:Generator_ColumnVarNameInTable="columnComSty" msprop:Generator_ColumnPropNameInRow="ComSty" msprop:Generator_ColumnPropNameInTable="ComStyColumn" msprop:Generator_UserColumnName="ComSty" type="xs:string" minOccurs="0" />
+              <xs:element name="Welllins" msprop:Generator_ColumnVarNameInTable="columnWelllins" msprop:Generator_ColumnPropNameInRow="Welllins" msprop:Generator_ColumnPropNameInTable="WelllinsColumn" msprop:Generator_UserColumnName="Welllins" type="xs:string" minOccurs="0" />
+              <xs:element name="LogTechnology" msprop:Generator_ColumnVarNameInTable="columnLogTechnology" msprop:Generator_ColumnPropNameInRow="LogTechnology" msprop:Generator_ColumnPropNameInTable="LogTechnologyColumn" msprop:Generator_UserColumnName="LogTechnology" type="xs:string" minOccurs="0" />
+              <xs:element name="OpenTime" msprop:Generator_ColumnVarNameInTable="columnOpenTime" msprop:Generator_ColumnPropNameInRow="OpenTime" msprop:Generator_ColumnPropNameInTable="OpenTimeColumn" msprop:Generator_UserColumnName="OpenTime" type="xs:string" minOccurs="0" />
+              <xs:element name="Enddate" msprop:Generator_ColumnVarNameInTable="columnEnddate" msprop:Generator_ColumnPropNameInRow="Enddate" msprop:Generator_ColumnPropNameInTable="EnddateColumn" msprop:Generator_UserColumnName="Enddate" type="xs:string" minOccurs="0" />
+              <xs:element name="Bitdia" msprop:Generator_ColumnVarNameInTable="columnBitdia" msprop:Generator_ColumnPropNameInRow="Bitdia" msprop:Generator_ColumnPropNameInTable="BitdiaColumn" msprop:Generator_UserColumnName="Bitdia" type="xs:string" minOccurs="0" />
+              <xs:element name="Welldepth" msprop:Generator_ColumnVarNameInTable="columnWelldepth" msprop:Generator_ColumnPropNameInRow="Welldepth" msprop:Generator_ColumnPropNameInTable="WelldepthColumn" msprop:Generator_UserColumnName="Welldepth" type="xs:string" minOccurs="0" />
+              <xs:element name="TgWj" msprop:Generator_ColumnVarNameInTable="columnTgWj" msprop:Generator_ColumnPropNameInRow="TgWj" msprop:Generator_ColumnPropNameInTable="TgWjColumn" msprop:Generator_UserColumnName="TgWj" type="xs:string" minOccurs="0" />
+              <xs:element name="XDepth" msprop:Generator_ColumnVarNameInTable="columnXDepth" msprop:Generator_ColumnPropNameInRow="XDepth" msprop:Generator_ColumnPropNameInTable="XDepthColumn" msprop:Generator_UserColumnName="XDepth" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

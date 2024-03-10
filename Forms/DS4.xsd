@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DS4" targetNamespace="http://tempuri.org/DS4.xsd" xmlns:mstns="http://tempuri.org/DS4.xsd" xmlns="http://tempuri.org/DS4.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DS4" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DS4" msprop:Generator_UserDSName="DS4">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTable4" msprop:Generator_TableClassName="DataTable4DataTable" msprop:Generator_TableVarName="tableDataTable4" msprop:Generator_TablePropName="DataTable4" msprop:Generator_RowDeletingName="DataTable4RowDeleting" msprop:Generator_RowChangingName="DataTable4RowChanging" msprop:Generator_RowEvHandlerName="DataTable4RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable4RowDeleted" msprop:Generator_UserTableName="DataTable4" msprop:Generator_RowChangedName="DataTable4RowChanged" msprop:Generator_RowEvArgName="DataTable4RowChangeEvent" msprop:Generator_RowClassName="DataTable4Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ProblemNum" msprop:Generator_ColumnVarNameInTable="columnProblemNum" msprop:Generator_ColumnPropNameInRow="ProblemNum" msprop:Generator_ColumnPropNameInTable="ProblemNumColumn" msprop:Generator_UserColumnName="ProblemNum" type="xs:string" minOccurs="0" />
+              <xs:element name="InstallationAndDetection" msprop:Generator_ColumnVarNameInTable="columnInstallationAndDetection" msprop:Generator_ColumnPropNameInRow="InstallationAndDetection" msprop:Generator_ColumnPropNameInTable="InstallationAndDetectionColumn" msprop:Generator_UserColumnName="InstallationAndDetection" type="xs:string" minOccurs="0" />
+              <xs:element name="FacilitiesAndManagement" msprop:Generator_ColumnVarNameInTable="columnFacilitiesAndManagement" msprop:Generator_ColumnPropNameInRow="FacilitiesAndManagement" msprop:Generator_ColumnPropNameInTable="FacilitiesAndManagementColumn" msprop:Generator_UserColumnName="FacilitiesAndManagement" type="xs:string" minOccurs="0" />
+              <xs:element name="SupplyAndManagement" msprop:Generator_ColumnVarNameInTable="columnSupplyAndManagement" msprop:Generator_ColumnPropNameInRow="SupplyAndManagement" msprop:Generator_ColumnPropNameInTable="SupplyAndManagementColumn" msprop:Generator_UserColumnName="SupplyAndManagement" type="xs:string" minOccurs="0" />
+              <xs:element name="EmergencyPlanAndDrill" msprop:Generator_ColumnVarNameInTable="columnEmergencyPlanAndDrill" msprop:Generator_ColumnPropNameInRow="EmergencyPlanAndDrill" msprop:Generator_ColumnPropNameInTable="EmergencyPlanAndDrillColumn" msprop:Generator_UserColumnName="EmergencyPlanAndDrill" type="xs:string" minOccurs="0" />
+              <xs:element name="LoggingEnvironment" msprop:Generator_ColumnVarNameInTable="columnLoggingEnvironment" msprop:Generator_ColumnPropNameInRow="LoggingEnvironment" msprop:Generator_ColumnPropNameInTable="LoggingEnvironmentColumn" msprop:Generator_UserColumnName="LoggingEnvironment" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

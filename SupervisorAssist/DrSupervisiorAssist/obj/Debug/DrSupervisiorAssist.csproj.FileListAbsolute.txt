@@ -1,0 +1,5 @@
+D:\code.C#\SupervisorAssist\DrSupervisiorAssist\obj\Debug\DrSupervisiorAssist.csproj.AssemblyReference.cache
+D:\code.C#\SupervisorAssist\DrSupervisiorAssist\obj\Debug\DrSupervisiorAssist.Form1.resources
+D:\code.C#\SupervisorAssist\DrSupervisiorAssist\obj\Debug\DrSupervisiorAssist.Properties.Resources.resources
+D:\code.C#\SupervisorAssist\DrSupervisiorAssist\obj\Debug\DrSupervisiorAssist.csproj.GenerateResource.cache
+D:\code.C#\SupervisorAssist\DrSupervisiorAssist\obj\Debug\DrSupervisiorAssist.csproj.CoreCompileInputs.cache

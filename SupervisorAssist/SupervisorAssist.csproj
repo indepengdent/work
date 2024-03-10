@@ -1,0 +1,687 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C8D4D289-41DE-4CE5-B6D3-EFB69B7F33B2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SupervisorAssist</RootNamespace>
+    <AssemblyName>SupervisorAssist</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\packages\Microsoft.Office.Interop.Excel.15.0.4795.1001\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Word, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\packages\Microsoft.Office.Interop.Word.15.0.4797.1004\lib\net20\Microsoft.Office.Interop.Word.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.Common.10.0.40219.1\lib\Microsoft.ReportViewer.Common.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.Common.10.0.40219.1\lib\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.Common.10.0.40219.1\lib\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.WinForms.10.0.40219.1\lib\Microsoft.ReportViewer.WinForms.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataSetbasicd.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetbasicd.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetRN.cs">
+      <DependentUpon>DataSetRN.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetRN.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetRN.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DgvColumnHelper.cs" />
+    <Compile Include="DgvRowHelper.cs" />
+    <Compile Include="FormRN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRN.Designer.cs">
+      <DependentUpon>FormRN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSSCA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSSCA.Designer.cs">
+      <DependentUpon>FormSSCA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSSGL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSSGL.Designer.cs">
+      <DependentUpon>FormSSGL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSSSP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSSSP.Designer.cs">
+      <DependentUpon>FormSSSP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm HSE BasicdataR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm HSE BasicdataR.Designer.cs">
+      <DependentUpon>Frm HSE BasicdataR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm HSE H2S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm HSE H2S.Designer.cs">
+      <DependentUpon>Frm HSE H2S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm HSE HSSD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm HSE HSSD.Designer.cs">
+      <DependentUpon>Frm HSE HSSD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm HSE Logging environment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm HSE Logging environment.Designer.cs">
+      <DependentUpon>Frm HSE Logging environment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm HSE Logging sitting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm HSE Logging sitting.Designer.cs">
+      <DependentUpon>Frm HSE Logging sitting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm HSE Safety protection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm HSE Safety protection.Designer.cs">
+      <DependentUpon>Frm HSE Safety protection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm HSE Workload summary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm HSE Workload summary.Designer.cs">
+      <DependentUpon>Frm HSE Workload summary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm HSE Workload summary_02.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm HSE Workload summary_02.Designer.cs">
+      <DependentUpon>Frm HSE Workload summary_02.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm PM Basicdata.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm PM Basicdata.Designer.cs">
+      <DependentUpon>Frm PM Basicdata.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm PM Data quality.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm PM Data quality.Designer.cs">
+      <DependentUpon>Frm PM Data quality.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm PM Deviceinstall.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm PM Deviceinstall.Designer.cs">
+      <DependentUpon>Frm PM Deviceinstall.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm PM Drillingtool.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm PM Drillingtool.Designer.cs">
+      <DependentUpon>Frm PM Drillingtool.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm PM Engineering warning.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm PM Engineering warning.Designer.cs">
+      <DependentUpon>Frm PM Engineering warning.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm PM geological card layer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm PM geological card layer.Designer.cs">
+      <DependentUpon>Frm PM geological card layer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm PM Key situation reflections.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm PM Key situation reflections.Designer.cs">
+      <DependentUpon>Frm PM Key situation reflections.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm PM Lithological implementation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm PM Lithological implementation.Designer.cs">
+      <DependentUpon>Frm PM Lithological implementation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm PM Logging sitting_02.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm PM Logging sitting_02.Designer.cs">
+      <DependentUpon>Frm PM Logging sitting_02.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm PM other oversight projects.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm PM other oversight projects.Designer.cs">
+      <DependentUpon>Frm PM other oversight projects.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm PM Reservoir discovery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm PM Reservoir discovery.Designer.cs">
+      <DependentUpon>Frm PM Reservoir discovery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm PM Typical case studies.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm PM Typical case studies.Designer.cs">
+      <DependentUpon>Frm PM Typical case studies.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm RN Rectification notice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm RN Rectification notice.Designer.cs">
+      <DependentUpon>Frm RN Rectification notice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm RN Rectification receipt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm RN Rectification receipt.Designer.cs">
+      <DependentUpon>Frm RN Rectification receipt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm SA AAPS .cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm SA AAPS .Designer.cs">
+      <DependentUpon>Frm SA AAPS .cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm SA DEAI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm SA DEAI.Designer.cs">
+      <DependentUpon>Frm SA DEAI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm SA EOLEE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm SA EOLEE.Designer.cs">
+      <DependentUpon>Frm SA EOLEE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm SA GRE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm SA GRE.Designer.cs">
+      <DependentUpon>Frm SA GRE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm SA Instrumenttation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm SA Instrumenttation.Designer.cs">
+      <DependentUpon>Frm SA Instrumenttation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm SA Predata.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm SA Predata.Designer.cs">
+      <DependentUpon>Frm SA Predata.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm SA SEAI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm SA SEAI.Designer.cs">
+      <DependentUpon>Frm SA SEAI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm SA Staffingdocu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm SA Staffingdocu.Designer.cs">
+      <DependentUpon>Frm SA Staffingdocu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm SA Teamqualification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm SA Teamqualification.Designer.cs">
+      <DependentUpon>Frm SA Teamqualification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm SS Commencement acceptance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm SS Commencement acceptance.Designer.cs">
+      <DependentUpon>Frm SS Commencement acceptance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm SS Discovery problem table.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm SS Discovery problem table.Designer.cs">
+      <DependentUpon>Frm SS Discovery problem table.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm SS Geological surveillance log.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm SS Geological surveillance log.Designer.cs">
+      <DependentUpon>Frm SS Geological surveillance log.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm SS History of logging wells.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm SS History of logging wells.Designer.cs">
+      <DependentUpon>Frm SS History of logging wells.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm SS Oversight Memorandum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm SS Oversight Memorandum.Designer.cs">
+      <DependentUpon>Frm SS Oversight Memorandum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm SS Summary report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm SS Summary report.Designer.cs">
+      <DependentUpon>Frm SS Summary report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm SS Supervision plan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm SS Supervision plan.Designer.cs">
+      <DependentUpon>Frm SS Supervision plan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Model.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Model.Designer.cs">
+      <DependentUpon>Frm_Model.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_MP_AddWell.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_MP_AddWell.Designer.cs">
+      <DependentUpon>Frm_MP_AddWell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_MP_Bascidata.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_MP_Bascidata.Designer.cs">
+      <DependentUpon>Frm_MP_Bascidata.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_MP_BDinfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_MP_BDinfo.Designer.cs">
+      <DependentUpon>Frm_MP_BDinfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_MP_BDPro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_MP_BDPro.Designer.cs">
+      <DependentUpon>Frm_MP_BDPro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_MP_BDStru.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_MP_BDStru.Designer.cs">
+      <DependentUpon>Frm_MP_BDStru.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_MP_MonitPlan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_MP_MonitPlan.Designer.cs">
+      <DependentUpon>Frm_MP_MonitPlan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm PM logging sitting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm PM logging sitting.Designer.cs">
+      <DependentUpon>Frm PM logging sitting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_SA_BasicData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_SA_BasicData.Designer.cs">
+      <DependentUpon>Frm_SA_BasicData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Userlogon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Userlogon.Designer.cs">
+      <DependentUpon>Frm_Userlogon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Usermanage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Usermanage.Designer.cs">
+      <DependentUpon>Frm_Usermanage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Useradd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Useradd.designer.cs">
+      <DependentUpon>Frm_Useradd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Userupdata.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Userupdata.Designer.cs">
+      <DependentUpon>Frm_Userupdata.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GeoSuperv.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormRN.resx">
+      <DependentUpon>FormRN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSSCA.resx">
+      <DependentUpon>FormSSCA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSSGL.resx">
+      <DependentUpon>FormSSGL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSSSP.resx">
+      <DependentUpon>FormSSSP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm HSE BasicdataR.resx">
+      <DependentUpon>Frm HSE BasicdataR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm HSE H2S.resx">
+      <DependentUpon>Frm HSE H2S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm HSE HSSD.resx">
+      <DependentUpon>Frm HSE HSSD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm HSE Logging environment.resx">
+      <DependentUpon>Frm HSE Logging environment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm HSE Logging sitting.resx">
+      <DependentUpon>Frm HSE Logging sitting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm HSE Safety protection.resx">
+      <DependentUpon>Frm HSE Safety protection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm HSE Workload summary.resx">
+      <DependentUpon>Frm HSE Workload summary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm HSE Workload summary_02.resx">
+      <DependentUpon>Frm HSE Workload summary_02.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm PM Basicdata.resx">
+      <DependentUpon>Frm PM Basicdata.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm PM Data quality.resx">
+      <DependentUpon>Frm PM Data quality.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm PM Deviceinstall.resx">
+      <DependentUpon>Frm PM Deviceinstall.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm PM Drillingtool.resx">
+      <DependentUpon>Frm PM Drillingtool.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm PM Engineering warning.resx">
+      <DependentUpon>Frm PM Engineering warning.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm PM geological card layer.resx">
+      <DependentUpon>Frm PM geological card layer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm PM Key situation reflections.resx">
+      <DependentUpon>Frm PM Key situation reflections.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm PM Lithological implementation.resx">
+      <DependentUpon>Frm PM Lithological implementation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm PM Logging sitting_02.resx">
+      <DependentUpon>Frm PM Logging sitting_02.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm PM other oversight projects.resx">
+      <DependentUpon>Frm PM other oversight projects.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm PM Reservoir discovery.resx">
+      <DependentUpon>Frm PM Reservoir discovery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm PM Typical case studies.resx">
+      <DependentUpon>Frm PM Typical case studies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm RN Rectification notice.resx">
+      <DependentUpon>Frm RN Rectification notice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm RN Rectification receipt.resx">
+      <DependentUpon>Frm RN Rectification receipt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm SA AAPS .resx">
+      <DependentUpon>Frm SA AAPS .cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm SA DEAI.resx">
+      <DependentUpon>Frm SA DEAI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm SA EOLEE.resx">
+      <DependentUpon>Frm SA EOLEE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm SA GRE.resx">
+      <DependentUpon>Frm SA GRE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm SA Instrumenttation.resx">
+      <DependentUpon>Frm SA Instrumenttation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm SA Predata.resx">
+      <DependentUpon>Frm SA Predata.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm SA SEAI.resx">
+      <DependentUpon>Frm SA SEAI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm SA Staffingdocu.resx">
+      <DependentUpon>Frm SA Staffingdocu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm SA Teamqualification.resx">
+      <DependentUpon>Frm SA Teamqualification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm SS Commencement acceptance.resx">
+      <DependentUpon>Frm SS Commencement acceptance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm SS Discovery problem table.resx">
+      <DependentUpon>Frm SS Discovery problem table.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm SS Geological surveillance log.resx">
+      <DependentUpon>Frm SS Geological surveillance log.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm SS History of logging wells.resx">
+      <DependentUpon>Frm SS History of logging wells.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm SS Oversight Memorandum.resx">
+      <DependentUpon>Frm SS Oversight Memorandum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm SS Summary report.resx">
+      <DependentUpon>Frm SS Summary report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm SS Supervision plan.resx">
+      <DependentUpon>Frm SS Supervision plan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Model.resx">
+      <DependentUpon>Frm_Model.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_MP_AddWell.resx">
+      <DependentUpon>Frm_MP_AddWell.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_MP_Bascidata.resx">
+      <DependentUpon>Frm_MP_Bascidata.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_MP_BDinfo.resx">
+      <DependentUpon>Frm_MP_BDinfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_MP_BDPro.resx">
+      <DependentUpon>Frm_MP_BDPro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_MP_BDStru.resx">
+      <DependentUpon>Frm_MP_BDStru.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_MP_MonitPlan.resx">
+      <DependentUpon>Frm_MP_MonitPlan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm PM logging sitting.resx">
+      <DependentUpon>Frm PM logging sitting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_SA_BasicData.resx">
+      <DependentUpon>Frm_SA_BasicData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Userlogon.resx">
+      <DependentUpon>Frm_Userlogon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Usermanage.resx">
+      <DependentUpon>Frm_Usermanage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Useradd.resx">
+      <DependentUpon>Frm_Useradd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Userupdata.resx">
+      <DependentUpon>Frm_Userupdata.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ReportSSCA.rdlc" />
+    <EmbeddedResource Include="ReportRN.rdlc" />
+    <EmbeddedResource Include="ReportSSGL.rdlc" />
+    <EmbeddedResource Include="ReportSSSP.rdlc" />
+    <None Include="DataSetbasicd.xsc">
+      <DependentUpon>DataSetbasicd.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetbasicd.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetbasicd.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetbasicd.xss">
+      <DependentUpon>DataSetbasicd.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetRN.xsc">
+      <DependentUpon>DataSetRN.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetRN.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetRN.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetRN.xss">
+      <DependentUpon>DataSetRN.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{38d7aa58-c95b-449b-86c6-a8073a56e11f}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{e3d8759a-c5eb-402d-9f10-f5c6029a8d1a}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DALFactory\DALFactory.csproj">
+      <Project>{96401c5e-d166-4e4e-98c2-3eca91b6c7eb}</Project>
+      <Name>DALFactory</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DBUtility\DBUtility.csproj">
+      <Project>{0988C62E-247F-471F-A183-DB509C7A3839}</Project>
+      <Name>DBUtility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Forms\WellReports.csproj">
+      <Project>{37d11c63-d647-4171-8609-35b4548d8d3c}</Project>
+      <Name>WellReports</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IDAL\IDAL.csproj">
+      <Project>{b0706fa2-977c-4523-b093-f57804756498}</Project>
+      <Name>IDAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{53995dbb-9836-4647-ad22-865884fdeb9e}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SQLServerDAL\SQLServerDAL.csproj">
+      <Project>{ab835ba2-ffd6-49cd-87b0-e216255bb32e}</Project>
+      <Name>SQLServerDAL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

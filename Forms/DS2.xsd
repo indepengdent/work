@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DS2" targetNamespace="http://tempuri.org/DS2.xsd" xmlns:mstns="http://tempuri.org/DS2.xsd" xmlns="http://tempuri.org/DS2.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DS2" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DS2" msprop:Generator_UserDSName="DS2">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTable2" msprop:Generator_TableClassName="DataTable2DataTable" msprop:Generator_TableVarName="tableDataTable2" msprop:Generator_TablePropName="DataTable2" msprop:Generator_RowDeletingName="DataTable2RowDeleting" msprop:Generator_RowChangingName="DataTable2RowChanging" msprop:Generator_RowEvHandlerName="DataTable2RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable2RowDeleted" msprop:Generator_UserTableName="DataTable2" msprop:Generator_RowChangedName="DataTable2RowChanged" msprop:Generator_RowEvArgName="DataTable2RowChangeEvent" msprop:Generator_RowClassName="DataTable2Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ProblemNum" msprop:Generator_ColumnVarNameInTable="columnProblemNum" msprop:Generator_ColumnPropNameInRow="ProblemNum" msprop:Generator_ColumnPropNameInTable="ProblemNumColumn" msprop:Generator_UserColumnName="ProblemNum" type="xs:string" minOccurs="0" />
+              <xs:element name="Qualification" msprop:Generator_ColumnVarNameInTable="columnQualification" msprop:Generator_ColumnPropNameInRow="Qualification" msprop:Generator_ColumnPropNameInTable="QualificationColumn" msprop:Generator_UserColumnName="Qualification" type="xs:string" minOccurs="0" />
+              <xs:element name="StaffingIdentification" msprop:Generator_ColumnVarNameInTable="columnStaffingIdentification" msprop:Generator_ColumnPropNameInRow="StaffingIdentification" msprop:Generator_ColumnPropNameInTable="StaffingIdentificationColumn" msprop:Generator_UserColumnName="StaffingIdentification" type="xs:string" minOccurs="0" />
+              <xs:element name="EquipmentInstallation" msprop:Generator_ColumnVarNameInTable="columnEquipmentInstallation" msprop:Generator_ColumnPropNameInRow="EquipmentInstallation" msprop:Generator_ColumnPropNameInTable="EquipmentInstallationColumn" msprop:Generator_UserColumnName="EquipmentInstallation" type="xs:string" minOccurs="0" />
+              <xs:element name="Preparation" msprop:Generator_ColumnVarNameInTable="columnPreparation" msprop:Generator_ColumnPropNameInRow="Preparation" msprop:Generator_ColumnPropNameInTable="PreparationColumn" msprop:Generator_UserColumnName="Preparation" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
